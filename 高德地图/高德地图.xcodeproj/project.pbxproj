@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FADEB8EE1CEB0EB100DD2A22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEB8ED1CEB0EB100DD2A22 /* main.m */; };
+		FADEB8F11CEB0EB100DD2A22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEB8F01CEB0EB100DD2A22 /* AppDelegate.m */; };
+		FADEB8F41CEB0EB100DD2A22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEB8F31CEB0EB100DD2A22 /* ViewController.m */; };
+		FADEB8F71CEB0EB100DD2A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADEB8F51CEB0EB100DD2A22 /* Main.storyboard */; };
+		FADEB8F91CEB0EB100DD2A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADEB8F81CEB0EB100DD2A22 /* Assets.xcassets */; };
+		FADEB8FC1CEB0EB100DD2A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADEB8FA1CEB0EB100DD2A22 /* LaunchScreen.storyboard */; };
+		FADEB9071CEB0EB100DD2A22 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEB9061CEB0EB100DD2A22 /* ____Tests.m */; };
+		FADEB9121CEB0EB100DD2A22 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEB9111CEB0EB100DD2A22 /* ____UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADEB9031CEB0EB100DD2A22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADEB8E11CEB0EB100DD2A22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADEB8E81CEB0EB100DD2A22;
+			remoteInfo = "高德地图";
+		};
+		FADEB90E1CEB0EB100DD2A22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADEB8E11CEB0EB100DD2A22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADEB8E81CEB0EB100DD2A22;
+			remoteInfo = "高德地图";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FADEB8E91CEB0EB100DD2A22 /* 高德地图.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "高德地图.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADEB8ED1CEB0EB100DD2A22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FADEB8EF1CEB0EB100DD2A22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FADEB8F01CEB0EB100DD2A22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FADEB8F21CEB0EB100DD2A22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FADEB8F31CEB0EB100DD2A22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FADEB8F61CEB0EB100DD2A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADEB8F81CEB0EB100DD2A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FADEB8FB1CEB0EB100DD2A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FADEB8FD1CEB0EB100DD2A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADEB9021CEB0EB100DD2A22 /* 高德地图Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "高德地图Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADEB9061CEB0EB100DD2A22 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		FADEB9081CEB0EB100DD2A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADEB90D1CEB0EB100DD2A22 /* 高德地图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "高德地图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADEB9111CEB0EB100DD2A22 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		FADEB9131CEB0EB100DD2A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADEB8E61CEB0EB100DD2A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADEB8FF1CEB0EB100DD2A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADEB90A1CEB0EB100DD2A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FADEB8E01CEB0EB100DD2A22 = {
+			isa = PBXGroup;
+			children = (
+				FADEB8EB1CEB0EB100DD2A22 /* 高德地图 */,
+				FADEB9051CEB0EB100DD2A22 /* 高德地图Tests */,
+				FADEB9101CEB0EB100DD2A22 /* 高德地图UITests */,
+				FADEB8EA1CEB0EB100DD2A22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADEB8EA1CEB0EB100DD2A22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADEB8E91CEB0EB100DD2A22 /* 高德地图.app */,
+				FADEB9021CEB0EB100DD2A22 /* 高德地图Tests.xctest */,
+				FADEB90D1CEB0EB100DD2A22 /* 高德地图UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FADEB8EB1CEB0EB100DD2A22 /* 高德地图 */ = {
+			isa = PBXGroup;
+			children = (
+				FADEB8EF1CEB0EB100DD2A22 /* AppDelegate.h */,
+				FADEB8F01CEB0EB100DD2A22 /* AppDelegate.m */,
+				FADEB8F21CEB0EB100DD2A22 /* ViewController.h */,
+				FADEB8F31CEB0EB100DD2A22 /* ViewController.m */,
+				FADEB8F51CEB0EB100DD2A22 /* Main.storyboard */,
+				FADEB8F81CEB0EB100DD2A22 /* Assets.xcassets */,
+				FADEB8FA1CEB0EB100DD2A22 /* LaunchScreen.storyboard */,
+				FADEB8FD1CEB0EB100DD2A22 /* Info.plist */,
+				FADEB8EC1CEB0EB100DD2A22 /* Supporting Files */,
+			);
+			path = "高德地图";
+			sourceTree = "<group>";
+		};
+		FADEB8EC1CEB0EB100DD2A22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADEB8ED1CEB0EB100DD2A22 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FADEB9051CEB0EB100DD2A22 /* 高德地图Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FADEB9061CEB0EB100DD2A22 /* ____Tests.m */,
+				FADEB9081CEB0EB100DD2A22 /* Info.plist */,
+			);
+			path = "高德地图Tests";
+			sourceTree = "<group>";
+		};
+		FADEB9101CEB0EB100DD2A22 /* 高德地图UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FADEB9111CEB0EB100DD2A22 /* ____UITests.m */,
+				FADEB9131CEB0EB100DD2A22 /* Info.plist */,
+			);
+			path = "高德地图UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADEB8E81CEB0EB100DD2A22 /* 高德地图 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADEB9161CEB0EB100DD2A22 /* Build configuration list for PBXNativeTarget "高德地图" */;
+			buildPhases = (
+				FADEB8E51CEB0EB100DD2A22 /* Sources */,
+				FADEB8E61CEB0EB100DD2A22 /* Frameworks */,
+				FADEB8E71CEB0EB100DD2A22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "高德地图";
+			productName = "高德地图";
+			productReference = FADEB8E91CEB0EB100DD2A22 /* 高德地图.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADEB9011CEB0EB100DD2A22 /* 高德地图Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADEB9191CEB0EB100DD2A22 /* Build configuration list for PBXNativeTarget "高德地图Tests" */;
+			buildPhases = (
+				FADEB8FE1CEB0EB100DD2A22 /* Sources */,
+				FADEB8FF1CEB0EB100DD2A22 /* Frameworks */,
+				FADEB9001CEB0EB100DD2A22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADEB9041CEB0EB100DD2A22 /* PBXTargetDependency */,
+			);
+			name = "高德地图Tests";
+			productName = "高德地图Tests";
+			productReference = FADEB9021CEB0EB100DD2A22 /* 高德地图Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FADEB90C1CEB0EB100DD2A22 /* 高德地图UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADEB91C1CEB0EB100DD2A22 /* Build configuration list for PBXNativeTarget "高德地图UITests" */;
+			buildPhases = (
+				FADEB9091CEB0EB100DD2A22 /* Sources */,
+				FADEB90A1CEB0EB100DD2A22 /* Frameworks */,
+				FADEB90B1CEB0EB100DD2A22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADEB90F1CEB0EB100DD2A22 /* PBXTargetDependency */,
+			);
+			name = "高德地图UITests";
+			productName = "高德地图UITests";
+			productReference = FADEB90D1CEB0EB100DD2A22 /* 高德地图UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADEB8E11CEB0EB100DD2A22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "赵宏亚";
+				TargetAttributes = {
+					FADEB8E81CEB0EB100DD2A22 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					FADEB9011CEB0EB100DD2A22 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FADEB8E81CEB0EB100DD2A22;
+					};
+					FADEB90C1CEB0EB100DD2A22 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FADEB8E81CEB0EB100DD2A22;
+					};
+				};
+			};
+			buildConfigurationList = FADEB8E41CEB0EB100DD2A22 /* Build configuration list for PBXProject "高德地图" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADEB8E01CEB0EB100DD2A22;
+			productRefGroup = FADEB8EA1CEB0EB100DD2A22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADEB8E81CEB0EB100DD2A22 /* 高德地图 */,
+				FADEB9011CEB0EB100DD2A22 /* 高德地图Tests */,
+				FADEB90C1CEB0EB100DD2A22 /* 高德地图UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADEB8E71CEB0EB100DD2A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADEB8FC1CEB0EB100DD2A22 /* LaunchScreen.storyboard in Resources */,
+				FADEB8F91CEB0EB100DD2A22 /* Assets.xcassets in Resources */,
+				FADEB8F71CEB0EB100DD2A22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADEB9001CEB0EB100DD2A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADEB90B1CEB0EB100DD2A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADEB8E51CEB0EB100DD2A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADEB8F41CEB0EB100DD2A22 /* ViewController.m in Sources */,
+				FADEB8F11CEB0EB100DD2A22 /* AppDelegate.m in Sources */,
+				FADEB8EE1CEB0EB100DD2A22 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADEB8FE1CEB0EB100DD2A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADEB9071CEB0EB100DD2A22 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADEB9091CEB0EB100DD2A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADEB9121CEB0EB100DD2A22 /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADEB9041CEB0EB100DD2A22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADEB8E81CEB0EB100DD2A22 /* 高德地图 */;
+			targetProxy = FADEB9031CEB0EB100DD2A22 /* PBXContainerItemProxy */;
+		};
+		FADEB90F1CEB0EB100DD2A22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADEB8E81CEB0EB100DD2A22 /* 高德地图 */;
+			targetProxy = FADEB90E1CEB0EB100DD2A22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FADEB8F51CEB0EB100DD2A22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADEB8F61CEB0EB100DD2A22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FADEB8FA1CEB0EB100DD2A22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADEB8FB1CEB0EB100DD2A22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FADEB9141CEB0EB100DD2A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADEB9151CEB0EB100DD2A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADEB9171CEB0EB100DD2A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "高德地图/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FADEB9181CEB0EB100DD2A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "高德地图/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FADEB91A1CEB0EB100DD2A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "高德地图Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/高德地图.app/高德地图";
+			};
+			name = Debug;
+		};
+		FADEB91B1CEB0EB100DD2A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "高德地图Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/高德地图.app/高德地图";
+			};
+			name = Release;
+		};
+		FADEB91D1CEB0EB100DD2A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "高德地图UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "高德地图";
+			};
+			name = Debug;
+		};
+		FADEB91E1CEB0EB100DD2A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "高德地图UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "高德地图";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADEB8E41CEB0EB100DD2A22 /* Build configuration list for PBXProject "高德地图" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADEB9141CEB0EB100DD2A22 /* Debug */,
+				FADEB9151CEB0EB100DD2A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADEB9161CEB0EB100DD2A22 /* Build configuration list for PBXNativeTarget "高德地图" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADEB9171CEB0EB100DD2A22 /* Debug */,
+				FADEB9181CEB0EB100DD2A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FADEB9191CEB0EB100DD2A22 /* Build configuration list for PBXNativeTarget "高德地图Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADEB91A1CEB0EB100DD2A22 /* Debug */,
+				FADEB91B1CEB0EB100DD2A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FADEB91C1CEB0EB100DD2A22 /* Build configuration list for PBXNativeTarget "高德地图UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADEB91D1CEB0EB100DD2A22 /* Debug */,
+				FADEB91E1CEB0EB100DD2A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FADEB8E11CEB0EB100DD2A22 /* Project object */;
+}

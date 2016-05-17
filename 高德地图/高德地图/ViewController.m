@@ -47,8 +47,19 @@
     self.mapView.showsUserLocation = YES; //开启定位
     
     self.mapView.userTrackingMode = MAUserTrackingModeFollowWithHeading; //跟随用户的位置和角度移动
-    
     [self.mapView setZoomLevel:16.1 animated:YES];
+    
+    
+#pragma mark 添加大头针
+    MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init];
+    pointAnnotation.coordinate = CLLocationCoordinate2DMake(39.989631, 116.481018);
+    pointAnnotation.title = @"方恒国际";
+    pointAnnotation.subtitle = @"阜通东大街6号";
+    
+    [self.mapView addAnnotation:pointAnnotation];
+    
+    
+    
     
 }
 
@@ -104,6 +115,43 @@ updatingLocation:(BOOL)updatingLocation
         //取出当前位置的坐标
         NSLog(@"纬度 : %f,经度: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
     }
+}
+
+#pragma mark 大头针代理方法
+- (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id <MAAnnotation>)annotation {
+//    if ([annotation isKindOfClass:[MAPointAnnotation class]])
+//    {
+//        static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
+//        MAPinAnnotationView*annotationView = (MAPinAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
+//        if (annotationView == nil)
+//        {
+//            annotationView = [[MAPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
+//        }
+//        annotationView.canShowCallout= YES;       //设置气泡可以弹出，默认为NO
+//        annotationView.animatesDrop = YES;        //设置标注动画显示，默认为NO
+//        annotationView.draggable = YES;        //设置标注可以拖动，默认为NO
+//        annotationView.pinColor = MAPinAnnotationColorPurple;
+//        
+//        return annotationView;
+//    }
+    
+    //自定义标注样式
+    if ([annotation isKindOfClass:[MAPointAnnotation class]])
+    {
+        static NSString *reuseIndetifier = @"annotationReuseIndetifier";
+        MAAnnotationView *annotationView = (MAAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:reuseIndetifier];
+        if (annotationView == nil)
+        {
+            annotationView = [[MAAnnotationView alloc] initWithAnnotation:annotation
+                                                          reuseIdentifier:reuseIndetifier];
+        }
+        annotationView.image = [UIImage imageNamed:@"location"];
+        //设置中心点偏移，使得标注底部中间点成为经纬度对应点
+        annotationView.centerOffset = CGPointMake(0, -18);
+        return annotationView;
+    }
+    
+    return nil;
 }
 
 - (void)didReceiveMemoryWarning {

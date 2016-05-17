@@ -22,11 +22,51 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.52957954340000002" green="1" blue="0.4770298382" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7y-yX-Ilm">
+                                <rect key="frame" x="171" y="536" width="258" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1O-ce-5eC">
+                                        <rect key="frame" x="0.0" y="8" width="123" height="30"/>
+                                        <state key="normal" title="普通地图"/>
+                                        <connections>
+                                            <action selector="mapType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LfQ-MO-JXc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isY-Fc-4t3">
+                                        <rect key="frame" x="131" y="10" width="127" height="30"/>
+                                        <state key="normal" title="卫星地图"/>
+                                        <connections>
+                                            <action selector="mapType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1hK-Rn-6oI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258" id="DLx-nb-hl7"/>
+                                    <constraint firstAttribute="height" constant="49" id="xSN-Zy-8iI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bL-qf-jHr">
+                                <rect key="frame" x="533" y="555" width="37" height="30"/>
+                                <color key="backgroundColor" red="0.9447811153976079" green="1" blue="0.98066249893904467" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nyq-ys-aKz"/>
+                                    <constraint firstAttribute="width" constant="37" id="zvB-ud-RUG"/>
+                                </constraints>
+                                <state key="normal" title="交通"/>
+                                <connections>
+                                    <action selector="jiaoTongButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiv-pE-aQm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o7y-yX-Ilm" secondAttribute="bottom" constant="15" id="7St-Da-uCB"/>
+                            <constraint firstItem="o7y-yX-Ilm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DCW-PG-s77"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0bL-qf-jHr" secondAttribute="bottom" constant="15" id="RfW-bX-aEX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t7G-yo-Lrd" secondAttribute="bottom" id="fJQ-LW-Cy8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t7G-yo-Lrd" secondAttribute="trailing" constant="-20" id="l1g-6A-Zwv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0bL-qf-jHr" secondAttribute="trailing" constant="10" id="l80-ke-WU8"/>
                             <constraint firstItem="t7G-yo-Lrd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="mAM-1L-m2e"/>
                             <constraint firstItem="t7G-yo-Lrd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zc2-Ha-1fa"/>
                         </constraints>
@@ -37,6 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="235"/>
         </scene>
     </scenes>
 </document>

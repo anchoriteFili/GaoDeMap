@@ -4,10 +4,10 @@
 //
 //  Created by 赵宏亚 on 16/5/17.
 //  Copyright © 2016年 赵宏亚. All rights reserved.
-//
+//  pod 'AMap2DMap'
+//  pod 'AMapSearch'
 
 #import "AppDelegate.h"
-
 
 @interface AppDelegate ()
 
@@ -18,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [MAMapServices sharedServices].apiKey = @"6ba4f51c726f4c7b89ab8ba7ffc4f600";
+    [AMapSearchServices sharedServices].apiKey = @"6ba4f51c726f4c7b89ab8ba7ffc4f600";
+    
+    
     return YES;
 }
 

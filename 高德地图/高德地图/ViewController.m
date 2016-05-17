@@ -8,7 +8,12 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<MAMapViewDelegate>
+
+
+@property (weak, nonatomic) IBOutlet MAMapView *mapView; //地图view
+
+
 
 @end
 
@@ -17,6 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.mapView.delegate = self;
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

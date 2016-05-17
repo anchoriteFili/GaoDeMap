@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		746F1A705659CFFA91E193F4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70948CF42A560D2E5D3EE54E /* libPods.a */; };
 		FADEB8EE1CEB0EB100DD2A22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEB8ED1CEB0EB100DD2A22 /* main.m */; };
 		FADEB8F11CEB0EB100DD2A22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEB8F01CEB0EB100DD2A22 /* AppDelegate.m */; };
 		FADEB8F41CEB0EB100DD2A22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEB8F31CEB0EB100DD2A22 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70948CF42A560D2E5D3EE54E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06D96584AE7085D9C3B3454 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DE1F859D69AA52267EADF16A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FADEB8E91CEB0EB100DD2A22 /* 高德地图.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "高德地图.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADEB8ED1CEB0EB100DD2A22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FADEB8EF1CEB0EB100DD2A22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 		FADEB90D1CEB0EB100DD2A22 /* 高德地图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "高德地图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADEB9111CEB0EB100DD2A22 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		FADEB9131CEB0EB100DD2A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADEB91F1CEB0FDB00DD2A22 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				746F1A705659CFFA91E193F4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC734CDC6172CB6DBEE92A64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70948CF42A560D2E5D3EE54E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFD2ECC1895D119D09EEC6F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C06D96584AE7085D9C3B3454 /* Pods.debug.xcconfig */,
+				DE1F859D69AA52267EADF16A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FADEB8E01CEB0EB100DD2A22 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +108,8 @@
 				FADEB9051CEB0EB100DD2A22 /* 高德地图Tests */,
 				FADEB9101CEB0EB100DD2A22 /* 高德地图UITests */,
 				FADEB8EA1CEB0EB100DD2A22 /* Products */,
+				AFD2ECC1895D119D09EEC6F0 /* Pods */,
+				AC734CDC6172CB6DBEE92A64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +133,7 @@
 				FADEB8F51CEB0EB100DD2A22 /* Main.storyboard */,
 				FADEB8F81CEB0EB100DD2A22 /* Assets.xcassets */,
 				FADEB8FA1CEB0EB100DD2A22 /* LaunchScreen.storyboard */,
+				FADEB91F1CEB0FDB00DD2A22 /* PrefixHeader.pch */,
 				FADEB8FD1CEB0EB100DD2A22 /* Info.plist */,
 				FADEB8EC1CEB0EB100DD2A22 /* Supporting Files */,
 			);
@@ -147,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADEB9161CEB0EB100DD2A22 /* Build configuration list for PBXNativeTarget "高德地图" */;
 			buildPhases = (
+				CA1AA23E2CDF2568E242E194 /* Check Pods Manifest.lock */,
 				FADEB8E51CEB0EB100DD2A22 /* Sources */,
 				FADEB8E61CEB0EB100DD2A22 /* Frameworks */,
 				FADEB8E71CEB0EB100DD2A22 /* Resources */,
+				25C1631DBF38302BC0A9AA64 /* Embed Pods Frameworks */,
+				32E4A9B2F0D0FA6FA4AC0A4A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +293,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25C1631DBF38302BC0A9AA64 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32E4A9B2F0D0FA6FA4AC0A4A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1AA23E2CDF2568E242E194 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FADEB8E51CEB0EB100DD2A22 /* Sources */ = {
@@ -413,8 +490,10 @@
 		};
 		FADEB9171CEB0EB100DD2A22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06D96584AE7085D9C3B3454 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = " $(SRCROOT)/高德地图/PrefixHeader.pch";
 				INFOPLIST_FILE = "高德地图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----";
@@ -424,8 +503,10 @@
 		};
 		FADEB9181CEB0EB100DD2A22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1F859D69AA52267EADF16A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = " $(SRCROOT)/高德地图/PrefixHeader.pch";
 				INFOPLIST_FILE = "高德地图/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lvyouquan.----";
@@ -498,6 +579,7 @@
 				FADEB9181CEB0EB100DD2A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FADEB9191CEB0EB100DD2A22 /* Build configuration list for PBXNativeTarget "高德地图Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +588,7 @@
 				FADEB91B1CEB0EB100DD2A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FADEB91C1CEB0EB100DD2A22 /* Build configuration list for PBXNativeTarget "高德地图UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +597,7 @@
 				FADEB91E1CEB0EB100DD2A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

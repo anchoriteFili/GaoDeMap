@@ -8,12 +8,14 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<MAMapViewDelegate>
+@interface ViewController ()<MAMapViewDelegate,AMapLocationManagerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet MAMapView *mapView; //地图view
 
 @property (nonatomic,assign) BOOL isJiaoTong; //判断是否显示实时交通
+@property (nonatomic,assign) BOOL isDingWei; //判断是否开启定位
+@property (nonatomic,retain) AMapLocationManager *locationManager;
 
 @end
 
@@ -24,17 +26,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.mapView.delegate = self;
-    
-    //后台定位
+    self.mapView.showsUserLocation = YES; //开启定位
+         //后台定位
     self.mapView.pausesLocationUpdatesAutomatically = NO;
     self.mapView.allowsBackgroundLocationUpdates = YES;//iOS9以上系统必须配置
-    
-    /**
-     MAUserTrackingModeNone：仅在地图上显示，不跟随用户位置。
-     MAUserTrackingModeFollow：跟随用户位置移动，并将定位点设置成地图中心点。
-     MAUserTrackingModeFollowWithHeading：跟随用户的位置和角度移动。
-     */
-//    [self.mapView setUserTrackingMode: MAUserTrackingModeFollow animated:YES];
     
     
     
@@ -44,11 +39,15 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
     
-    self.mapView.showsUserLocation = YES; //开启定位
-    
     self.mapView.userTrackingMode = MAUserTrackingModeFollowWithHeading; //跟随用户的位置和角度移动
     [self.mapView setZoomLevel:16.1 animated:YES];
     
+    /**
+     MAUserTrackingModeNone：仅在地图上显示，不跟随用户位置。
+     MAUserTrackingModeFollow：跟随用户位置移动，并将定位点设置成地图中心点。
+     MAUserTrackingModeFollowWithHeading：跟随用户的位置和角度移动。
+     */
+    [self.mapView setUserTrackingMode: MAUserTrackingModeFollow animated:YES];
     
 #pragma mark 添加大头针
     MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init];
@@ -57,9 +56,6 @@
     pointAnnotation.subtitle = @"阜通东大街6号";
     
     [self.mapView addAnnotation:pointAnnotation];
-    
-    
-    
     
 }
 
@@ -86,6 +82,8 @@
 
 #pragma mark 自定义定位标注和精度圈儿的样式
 - (void)mapView:(MAMapView *)mapView didAddAnnotationViews:(NSArray *)views {
+    
+    NSLog(@"设置定位圈儿");
     MAAnnotationView *view = views[0];
     
     // 放到该方法中用以保证userlocation的annotationView已经添加到地图上了。
@@ -152,6 +150,44 @@ updatingLocation:(BOOL)updatingLocation
     }
     
     return nil;
+}
+
+- (void)configLocationManager
+{
+    self.locationManager = [[AMapLocationManager alloc] init];
+    
+    [self.locationManager setDelegate:self];
+    
+    [self.locationManager setPausesLocationUpdatesAutomatically:NO];
+    
+    [self.locationManager setAllowsBackgroundLocationUpdates:YES];
+}
+
+#pragma mark 点击定位按钮
+- (IBAction)dingWeiButtonClick:(UIButton *)sender {
+    
+    self.isDingWei = !self.isDingWei;
+    
+    if (self.isDingWei) {
+        //停止定位
+        [self.locationManager stopUpdatingLocation];
+        [sender setTitle:@"开" forState:UIControlStateNormal];
+    } else {
+        
+        [sender setTitle:@"关" forState:UIControlStateNormal];
+        //开始定位
+        [self.locationManager startUpdatingLocation];
+    }
+}
+
+- (void)amapLocationManager:(AMapLocationManager *)manager didFailWithError:(NSError *)error {
+    //定位错误
+    NSLog(@"%s, amapLocationManager = %@, error = %@", __func__, [manager class], error);
+}
+
+- (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location {
+    //定位结果
+    NSLog(@"location:{lat:%f; lon:%f; accuracy:%f}", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
 }
 
 - (void)didReceiveMemoryWarning {

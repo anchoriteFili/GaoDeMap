@@ -9,6 +9,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -21,6 +22,7 @@
     
     [MAMapServices sharedServices].apiKey = @"6ba4f51c726f4c7b89ab8ba7ffc4f600";
     [AMapSearchServices sharedServices].apiKey = @"6ba4f51c726f4c7b89ab8ba7ffc4f600";
+    [AMapLocationServices sharedServices].apiKey = @"6ba4f51c726f4c7b89ab8ba7ffc4f600";
     
     
     return YES;

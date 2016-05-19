@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -58,11 +58,25 @@
                                     <action selector="jiaoTongButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aiv-pE-aQm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zg-ZQ-BGH">
+                                <rect key="frame" x="35" y="491" width="44" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.74538878369582284" blue="0.83115920199346438" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="m6f-ic-0dP"/>
+                                    <constraint firstAttribute="height" constant="30" id="uqk-zt-Ruy"/>
+                                </constraints>
+                                <state key="normal" title="开"/>
+                                <connections>
+                                    <action selector="dingWeiButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YeS-ST-EOB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="o7y-yX-Ilm" firstAttribute="top" secondItem="5Zg-ZQ-BGH" secondAttribute="bottom" constant="15" id="610-i1-a2U"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o7y-yX-Ilm" secondAttribute="bottom" constant="15" id="7St-Da-uCB"/>
                             <constraint firstItem="o7y-yX-Ilm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DCW-PG-s77"/>
+                            <constraint firstItem="5Zg-ZQ-BGH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="M4D-CD-ohg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0bL-qf-jHr" secondAttribute="bottom" constant="15" id="RfW-bX-aEX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t7G-yo-Lrd" secondAttribute="bottom" id="fJQ-LW-Cy8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t7G-yo-Lrd" secondAttribute="trailing" constant="-20" id="l1g-6A-Zwv"/>

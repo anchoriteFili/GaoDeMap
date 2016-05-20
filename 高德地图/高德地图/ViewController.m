@@ -25,12 +25,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [MAMapServices sharedServices].apiKey = APIKEY;
+    [AMapSearchServices sharedServices].apiKey = APIKEY;
+    [AMapLocationServices sharedServices].apiKey = APIKEY;
+    
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES; //开启定位
          //后台定位
     self.mapView.pausesLocationUpdatesAutomatically = NO;
     self.mapView.allowsBackgroundLocationUpdates = YES;//iOS9以上系统必须配置
     
+    [self.mapView addObserver:self forKeyPath:@"showsUserLocation" options:NSKeyValueObservingOptionNew context:nil];
     
     
 }
@@ -76,7 +81,6 @@
         
         self.mapView.mapType = MAMapTypeSatellite;
     }
-    
 }
 
 
@@ -194,5 +198,15 @@ updatingLocation:(BOOL)updatingLocation
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)dealloc {
+    
+    [self.mapView removeObserver:self forKeyPath:@"showsUserLocation"];
+}
+
+
+
+
+
 
 @end

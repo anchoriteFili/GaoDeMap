@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 
 
+
 @interface AppDelegate ()
 
 @end
@@ -20,9 +21,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [MAMapServices sharedServices].apiKey = @"6ba4f51c726f4c7b89ab8ba7ffc4f600";
-    [AMapSearchServices sharedServices].apiKey = @"6ba4f51c726f4c7b89ab8ba7ffc4f600";
-    [AMapLocationServices sharedServices].apiKey = @"6ba4f51c726f4c7b89ab8ba7ffc4f600";
+    [MAMapServices sharedServices].apiKey = APIKEY;
+    [AMapSearchServices sharedServices].apiKey = APIKEY;
+    [AMapLocationServices sharedServices].apiKey = APIKEY;
     
     
     return YES;

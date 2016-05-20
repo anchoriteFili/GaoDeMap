@@ -23,7 +23,6 @@
     
     [MAMapServices sharedServices].apiKey = APIKEY;
     [AMapSearchServices sharedServices].apiKey = APIKEY;
-    [AMapLocationServices sharedServices].apiKey = APIKEY;
     
     
     return YES;

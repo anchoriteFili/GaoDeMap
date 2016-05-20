@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-yo-Lrd" customClass="MAMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" red="0.52957954340000002" green="1" blue="0.4770298382" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7y-yX-Ilm">
@@ -81,7 +81,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t7G-yo-Lrd" secondAttribute="bottom" id="fJQ-LW-Cy8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t7G-yo-Lrd" secondAttribute="trailing" constant="-20" id="l1g-6A-Zwv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0bL-qf-jHr" secondAttribute="trailing" constant="10" id="l80-ke-WU8"/>
-                            <constraint firstItem="t7G-yo-Lrd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="mAM-1L-m2e"/>
+                            <constraint firstItem="t7G-yo-Lrd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="64" id="mAM-1L-m2e"/>
                             <constraint firstItem="t7G-yo-Lrd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zc2-Ha-1fa"/>
                         </constraints>
                     </view>
